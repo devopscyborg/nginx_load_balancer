@@ -10,5 +10,11 @@ In this case we used **least_conn** balacing mechanism. In this mechanism reques
 # Installation
 
 - Copy this file into the **`/etc/nginx/conf.d/`**
+- Then choose one of methods you want to use `least_conn`, `roud_robin`, `ip_hash`
+- Write down your multiple web servers addresses that are runnning your webapp into `server` variable
+- Write down your pulic DNS name into `server_name` variable
+- Make sure that your configuration file is valid by testing **`sudo nginx -t`**
+- Then restart your NGINX server by **`sudo systemctl restart nginx`**
+- Checkout your webapp from browser
 
 
